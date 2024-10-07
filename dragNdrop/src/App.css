@@ -9,9 +9,23 @@
   display: flex;
   flex-direction: row;
 }
+
+.item-single {
+  background-color: #2bc64a;
+  max-width: 9rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .item {
   background-color: #61dafbaa;
   max-width: 9rem;
   margin: 1rem;
   padding: 1rem;
+}
+
+.dropped-items {
+  display: flex;
+  border: solid #2bc64a;
+  width: 40%;
 }
