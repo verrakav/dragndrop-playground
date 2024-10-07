@@ -10,10 +10,13 @@ const queueItems = [
   {id: 9, name: "Alan", category: "male", phoneNumber: "0484 392 201"},
   {id: 10, name: "Jack", category: "male", phoneNumber: "0465 478 512"}
 ];
-
 export default function Items() {
+  //   const itemRefs = useRef([]);
+
   const renderItems = queueItems.map(item => (
-    <div className="item" key={item.id}>
+    <div className="item" key={item.id}         draggable
+    onDragStart={e => handleOnDrag(e, "Rick")}>
+>
       {item.name}
     </div>
   ));
